@@ -34,36 +34,6 @@ Ce projet est conçu comme une base solide pour ajouter ensuite :
 | **Contrôle de version** | Git & GitHub | Versionning & collaboration |
 
 
----
-
-crud-api/
-│
-├── src/
-│   ├── app.js                  # Configuration principale de l'application Express
-│   ├── server.js               # Point d'entrée du serveur
-
-│   │
-│   ├── models/                 # 📦 Schémas Mongoose
-│   │   └── user.model.js       # Modèle utilisateur (User)
-
-│   │
-│   ├── routes/                 # 🧭 Gestion des routes API
-│   │   └── user.routes.js      # Routes CRUD pour les utilisateurs
-
-│   │
-│   └── controllers/            # ⚙️ Logique métier
-│       └── user.controller.js  # Contrôleur utilisateur
-│
-
-├── tests/                      # 🧪 Tests avec Jest
-│   └── user.test.js
-
-
-│
-├── .env                        # Variables d'environnement (non versionné)
-├── .gitignore                  # Fichiers ignorés par Git
-├── package.json                # Dépendances et scripts du projet
-└── README.md                   # Documentation du projet
 
 
 ## 🚀 Installation & Lancement
@@ -74,5 +44,18 @@ git clone https://github.com/Nourhenebenothmen22/crud_api_test_jest.js.git
 
 2️⃣ Installer les dépendances
 npm install
+
+🔄 Endpoints CRUD
+
+| Méthode    | Endpoint         | Description                   |
+| ---------- | ---------------- | ----------------------------- |
+| **POST**   | `/api/users`     | Créer un utilisateur          |
+| **GET**    | `/api/users`     | Obtenir tous les utilisateurs |
+| **GET**    | `/api/users/:id` | Obtenir un utilisateur par ID |
+| **PUT**    | `/api/users/:id` | Mettre à jour un utilisateur  |
+| **DELETE** | `/api/users/:id` | Supprimer un utilisateur      |
+
+🧪 Tests automatisés (Jest + Supertest)
+npm test
 
 
