@@ -35,28 +35,29 @@ Ce projet est conçu comme une base solide pour ajouter ensuite :
 
 ---
 
-## 🧱 Structure du projet
-
 crud-api/
 │
 ├── src/
-│   ├── app.js
-│   ├── server.js
-│   ├── models/
-│   │   └── user.model.js
-│   ├── routes/
-│   │   └── user.routes.js
-│   └── controllers/
-│       └── user.controller.js
+│   ├── app.js                  # Configuration principale de l'application Express
+│   ├── server.js               # Point d'entrée du serveur
+│   │
+│   ├── models/                 # 📦 Schémas Mongoose
+│   │   └── user.model.js       # Modèle utilisateur (User)
+│   │
+│   ├── routes/                 # 🧭 Gestion des routes API
+│   │   └── user.routes.js      # Routes CRUD pour les utilisateurs
+│   │
+│   └── controllers/            # ⚙️ Logique métier
+│       └── user.controller.js  # Contrôleur utilisateur
 │
-├── tests/
+├── tests/                      # 🧪 Tests avec Jest
 │   └── user.test.js
 │
-├── package.json
-└── .env
+├── .env                        # Variables d’environnement (non versionné)
+├── .gitignore                  # Fichiers ignorés par Git
+├── package.json                # Dépendances et scripts du projet
+└── README.md                   # Documentation du projet
 
-
----
 
 ## 🚀 Installation & Lancement
 
