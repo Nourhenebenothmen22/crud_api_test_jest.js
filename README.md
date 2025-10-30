@@ -33,6 +33,7 @@ Ce projet est conçu comme une base solide pour ajouter ensuite :
 | **Variables d’environnement** | dotenv | Gestion des configurations |
 | **Contrôle de version** | Git & GitHub | Versionning & collaboration |
 
+
 ---
 
 crud-api/
@@ -40,18 +41,24 @@ crud-api/
 ├── src/
 │   ├── app.js                  # Configuration principale de l'application Express
 │   ├── server.js               # Point d'entrée du serveur
+
 │   │
 │   ├── models/                 # 📦 Schémas Mongoose
 │   │   └── user.model.js       # Modèle utilisateur (User)
+
 │   │
 │   ├── routes/                 # 🧭 Gestion des routes API
 │   │   └── user.routes.js      # Routes CRUD pour les utilisateurs
+
 │   │
 │   └── controllers/            # ⚙️ Logique métier
 │       └── user.controller.js  # Contrôleur utilisateur
 │
+
 ├── tests/                      # 🧪 Tests avec Jest
 │   └── user.test.js
+
+
 │
 ├── .env                        # Variables d'environnement (non versionné)
 ├── .gitignore                  # Fichiers ignorés par Git
